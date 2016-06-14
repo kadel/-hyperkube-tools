@@ -33,7 +33,7 @@ sudo docker run -d \
     --allow-privileged --v=2
 
     kubectl config set-cluster hyperkube --server=http://localhost:8080
-    kubectl config set-context hyperkube --cluster=test
+    kubectl config set-context hyperkube --cluster=hyperkube
     kubectl config use-context hyperkube
 
     echo "Waiting for Kubernetes to start"
